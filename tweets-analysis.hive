@@ -1,0 +1,42 @@
+-- 10 most common hashtags
+SELECT lower(hashtags.text), count(*) AS total_count FROM mytweets_raw
+LATERAL VIEW explode(entities.hashtags) t1 AS hashtags
+GROUP BY lower(hashtags.text) ORDER BY total_count DESC LIMIT 10;
+
+-- country-wise sentiments
+SELECT * FROM tweetsbiaggr WHERE country NOT IN ('NULL','') LIMIT 10;
+
+-- Top 10 countries generating positive sentiments
+SELECT * FROM tweetsbiaggr WHERE country NOT IN ('NULL','')
+AND sentiment='positive' ORDER BY tweet_count DESC LIMIT 10;
+
+-- Top 10 countries generating negative sentiments
+SELECT * FROM tweetsbiaggr WHERE country NOT IN ('NULL','')
+AND sentiment='negative' ORDER BY tweet_count DESC LIMIT 10;
+
+-- 10 positive tweets
+SELECT * FROM tweetsbi WHERE sentiment='positive' LIMIT 10;
+
+-- 10 negative tweets
+SELECT * FROM tweetsbi WHERE sentiment='negative' LIMIT 10;
+
+-- Twitter users generating positive sentiment
+SELECT t.user.screen_name FROM mytweets_raw t
+WHERE t.id IN (SELECT id FROM tweets_sentiment ts WHERE ts.sentiment='positive');
+
+-- List of Twitter users tweeting about 'deadpool 2'
+SELECT t.user.screen_name FROM mytweets_raw t
+WHERE t.id IN (SELECT id FROM l3 l WHERE l.word IN ('deadpool 2','deadpool2'));
+
+-- List of Twitter users tweeting negatively about 'deadpool 2'
+CREATE VIEW IF NOT EXISTS D AS
+SELECT ts.*, t.user.screen_name FROM tweets_sentiment ts
+JOIN mytweets_raw t ON ts.id=t.id;
+
+SELECT screen_name FROM d WHERE d.id IN (SELECT id FROM l3 WHERE word='deadpool') AND sentiment='negative';
+
+-- Sentiment mix
+select sum(case when sentiment = 'neautral' then 1 else 0 end) as total_neautrals, 
+sum(case when sentiment = 'positive' then 1 else 0 end) as total_positives,
+sum(case when sentiment = 'negative' then 1 else 0 end) as total_negatives
+from tweets_sentiment;
