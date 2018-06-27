@@ -72,14 +72,11 @@ United States
 1\. Setting up raw data folders in **HDF**S and copy the dictionary files
 and time\_zone\_map data
 
-![](./screenshots/media/image1.tiff){width="6.263888888888889in"
-height="1.3597222222222223in"}
+![](./screenshots/media/image1.tiff)
 
-![](./screenshots/media/image2.tiff){width="6.263888888888889in"
-height="0.8222222222222222in"}
+![](./screenshots/media/image2.tiff)
 
-![](./screenshots/media/image3.tiff){width="6.263888888888889in"
-height="0.8486111111111111in"}
+![](./screenshots/media/image3.tiff)
 
 2\. Extract Data from Twitter using **Flume**
 
@@ -143,89 +140,67 @@ TwitterAgent.channels.MemChannel.capacity = 10000
 
 TwitterAgent.channels.MemChannel.transactionCapacity = 1000
 
-![](./screenshots/media/image4.tiff){width="6.263888888888889in"
-height="0.6695658355205599in"}
+![](./screenshots/media/image4.tiff)
 
-![](./screenshots/media/image5.tiff){width="6.263888888888889in"
-height="2.90625in"}
+![](./screenshots/media/image5.tiff)
 
-![](./screenshots/media/image6.tiff){width="6.263888888888889in"
-height="0.6604166666666667in"}
+![](./screenshots/media/image6.tiff)
 
 3\. Import data into **Hive** and perform analysis
 
-![](./screenshots/media/image7.tiff){width="6.263888888888889in"
-height="0.8076388888888889in"}
+![](./screenshots/media/image7.tiff)
 
 **Import Data**
 
-![](./screenshots/media/image8.tiff){width="6.263194444444444in"
-height="2.765217629046369in"}
+![](./screenshots/media/image8.tiff)
 
-![](./screenshots/media/image9.tiff){width="6.263888888888889in"
-height="5.4875in"}
+![](./screenshots/media/image9.tiff)
 
-![](./screenshots/media/image10.tiff){width="6.263888888888889in"
-height="3.1819444444444445in"}
+![](./screenshots/media/image10.tiff)
 
-![](./screenshots/media/image11.tiff){width="6.263888888888889in"
-height="3.222916666666667in"}
+![](./screenshots/media/image11.tiff)
 
 Prepare for Analysis
 
-![](./screenshots/media/image12.tiff){width="6.263888888888889in"
-height="2.122916666666667in"}
+![](./screenshots/media/image12.tiff)
 
-![](./screenshots/media/image13.tiff){width="6.263888888888889in"
-height="2.548611111111111in"}
+![](./screenshots/media/image13.tiff)
 
-![](./screenshots/media/image14.tiff){width="6.263888888888889in"
-height="1.8090277777777777in"}
+![](./screenshots/media/image14.tiff)
 
-![](./screenshots/media/image15.tiff){width="6.263888888888889in"
-height="2.314583333333333in"}
+![](./screenshots/media/image15.tiff)
 
-![](./screenshots/media/image16.tiff){width="6.263888888888889in"
-height="3.65625in"}
+![](./screenshots/media/image16.tiff)
 
-![](./screenshots/media/image17.tiff){width="6.263888888888889in"
-height="3.9569444444444444in"}
+![](./screenshots/media/image17.tiff)
 
-![](./screenshots/media/image18.tiff){width="6.263888888888889in"
-height="2.6956528871391074in"}
+![](./screenshots/media/image18.tiff)
 
-![](./screenshots/media/image19.tiff){width="6.208333333333333in"
-height="2.7826082677165354in"}
+![](./screenshots/media/image19.tiff)
 
-![](./screenshots/media/image20.tiff){width="6.263888888888889in"
-height="1.7854166666666667in"}
+![](./screenshots/media/image20.tiff)
 
 **Perform Analysis**
 
 10 most common hashtags
 
-![](./screenshots/media/image21.tiff){width="6.263888888888889in"
-height="6.525in"}
+![](./screenshots/media/image21.tiff)
 
 Country-wise sentiments
 
-![](./screenshots/media/image22.tiff){width="6.263888888888889in"
-height="4.152777777777778in"}
+![](./screenshots/media/image22.tiff)
 
 Top 10 countries generating positive sentiments
 
-![](./screenshots/media/image23.tiff){width="6.263888888888889in"
-height="4.159027777777778in"}
+![](./screenshots/media/image23.tiff)
 
 Top 10 countries generating negative sentiments
 
-![](./screenshots/media/image24.tiff){width="6.263888888888889in"
-height="4.263194444444444in"}
+![](./screenshots/media/image24.tiff)
 
 Sentiment mix:
 
-![](./screenshots/media/image25.tiff){width="6.263888888888889in"
-height="2.6222222222222222in"}
+![](./screenshots/media/image25.tiff)
 
 This shows the movie has received positive sentiments in majority which
 is a good sign and probably is the indication that the promotional
@@ -233,24 +208,20 @@ activities are working in favour.
 
 10 positive tweets:
 
-![](./screenshots/media/image26.tiff){width="6.263888888888889in"
-height="4.354861111111111in"}
+![](./screenshots/media/image26.tiff)
 
 10 negative tweets
 
-![](./screenshots/media/image27.tiff){width="6.263888888888889in"
-height="4.353472222222222in"}
+![](./screenshots/media/image27.tiff)
 
 Twitter users generating positive sentiment
 
-![](./screenshots/media/image28.tiff){width="6.2625in" height="4.4in"}
+![](./screenshots/media/image28.tiff)
 
 List of Twitter users tweeting about ‘deadpool 2’
 
-![](./screenshots/media/image29.tiff){width="6.263888888888889in"
-height="3.4583333333333335in"}
+![](./screenshots/media/image29.tiff)
 
 List of Twitter users tweeting negatively about ‘deadpool’
 
-![](./screenshots/media/image30.tiff){width="6.26248031496063in"
-height="5.208695319335083in"}
+![](./screenshots/media/image30.tiff)
