@@ -38,9 +38,6 @@ data have been used to better promote the movie’s launch?
 
 **Input Data**
 
-You can download a set of sample Twitter data contained in a compressed
-(.zip) folder which was collected from one following way.
-
 1\. The Twitter data was obtained using Flume. Flume can be used as a log
 aggregator, collecting log data from many diverse sources and moving it
 to a centralized data store. In this case, Flume was used to capture the
@@ -55,9 +52,6 @@ using WebCrawlers
 
 **Expected Output:**
 
-In order to optimize your website and convert more visits into sales and
-revenue.
-
 To refine and visualize website sentiment data, we will:
 
 Download and extract the sentiment tutorial files.
@@ -69,7 +63,7 @@ United States
 
 ***Solution:***
 
-1\. Setting up raw data folders in **HDF**S and copy the dictionary files
+1\. Setting up raw data folders in **HDFS** and copy the dictionary files
 and time\_zone\_map data
 
 ![](./screenshots/media/image1.tiff)
